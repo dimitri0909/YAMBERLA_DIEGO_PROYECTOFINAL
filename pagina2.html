@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/FotoFelipe.jpg">
+    <link rel="stylesheet" href="css/style1.css">
+    <title>Partes Internas del Computador</title>
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f7f7f7;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        nav {
+            background-color: #ecf0f1;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: #2c3e50;
+            font-weight: lighter;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #34495e;
+        }
+
+        main {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            width: 100%;
+            font-size: 1.5rem;
+            color: #34495e;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            opacity: 0.8;
+        }
+
+        .card img:hover {
+            transform: scale(1.05);
+            opacity: 1;
+        }
+
+        .card h3 {
+            margin: 15px 0;
+            color: #e74c3c;
+            font-size: 1.25rem;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #bdc3c7;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            main {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            .card {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Partes Internas del Computador</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="pagina2.html">Hardware</a>
+        <a href="pagina3.html">Componentes</a>
+        <a href="juegos.html">Juegos Educativos</a>
+        <a href="pagina5.html">Formulario</a>
+    </nav>
+
+    <main>
+        <h2>A continuación se presentarán las partes de la "caja" del ordenador, que se suele llamar CPU.</h2>
+        <div class="card">
+            <img src="img/micropro.jpg" alt="Microprocesador">
+            <h3>MICROPROCESADOR</h3>
+            <p>El procesador, junto con la motherboard y la memoria RAM, es un componente esencial que recibe, procesa y envía instrucciones predefinidas, como suma, resta y multiplicación. Tiene una pequeña memoria caché de alta velocidad. Una analogía posible sería comparar al procesador con una fábrica que recibe materia prima y produce productos terminados.</p>
+        </div>
+        <div class="card">
+            <img src="img/placa.jpg" alt="Placa Madre">
+            <h3>PLACA MADRE</h3>
+            <p>La motherboard, a menudo subestimada, es esencial para la sincronización y funcionamiento conjunto de todos los componentes de una computadora. Actúa como la red de carreteras que rodea una fábrica (el procesador). La elección de la motherboard al armar una computadora es crucial, ya que determina la compatibilidad con dispositivos y estándares específicos.</p>
+        </div>
+        <div class="card">
+            <img src="img/memoria.jpg" alt="Memoria RAM">
+            <h3>MEMORIA RAM</h3>
+            <p>La memoria RAM tiene características de velocidad, permitiendo que los datos se almacenen de forma temporal. Cada vez que reinicies o apagues tu ordenador, los datos almacenados en la RAM se pierden.</p>
+        </div>
+        <div class="card">
+            <img src="img/disco.jpg" alt="Disco Duro">
+            <h3>DISCO DURO</h3>
+            <p>El disco duro, generalmente ubicado internamente en las computadoras, destaca por su amplia capacidad de almacenamiento, aunque es más lento que la memoria RAM. Existen unidades de hasta 4TB-6TB. Actualmente, la tecnología "sólida" está ganando popularidad.</p>
+        </div>
+        <div class="card">
+            <img src="img/lector.jpg" alt="Lector Óptico">
+            <h3>LECTOR ÓPTICO</h3>
+            <p>Los lectores ópticos, que leían discos DVD, CD o BluRay, están en desuso. Hoy en día, los videos se descargan de Internet o se almacenan en memorias USB.</p>
+        </div>
+        <div class="card">
+            <img src="img/fuente.png" alt="Fuente de Poder">
+            <h3>FUENTE DE PODER</h3>
+            <p>El corazón del sistema, que suministra energía eléctrica a la placa base y a todos los componentes del CPU, asegurando su funcionamiento y manteniendo ciertos sistemas básicos cuando el computador está apagado.</p>
+        </div>
+        <div class="card">
+            <img src="img/tarjeta.png" alt="Tarjeta de Red">
+            <h3>TARJETA DE RED</h3>
+            <p>Estas tarjetas incluyen puertos para cables telefónicos o de fibra óptica y adaptadores de WiFi o redes inalámbricas, gestionables mediante el software adecuado.</p>
+        </div>
+        <div class="card">
+            <img src="img/ventilador.jpg" alt="Ventilador">
+            <h3>VENTILADOR</h3>
+            <p>El ventilador extrae el aire caliente, permitiendo que las temperaturas internas disminuyan. Un sobrecalentamiento podría detener el sistema y dañar permanentemente algunos componentes.</p>
+        </div>
+        <div class="card">
+            <img src="img/sonido.png" alt="Tarjeta de Sonido">
+            <h3>TARJETA DE SONIDO</h3>
+            <p>Especializada en el procesamiento de señales de audio, mejorando la calidad y nitidez de las emisiones sonoras, esencial para disfrutar de películas, juegos, etc.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p id="direccion">Atuntaqui, av General Enriques, <span>Ecuador-Imbabura | Tel: 098 7744 863</span></p>
+        <a href="https://concepto.de/hardware/">Más sobre Hardware</a>
+    </footer>
+</body>
+</html>

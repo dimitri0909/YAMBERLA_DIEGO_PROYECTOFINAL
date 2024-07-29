@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Galería de Juegos Educativos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        #wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        header {
+            background-color: #00CED1;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        header nav {
+            margin-bottom: 10px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #00BFFF;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .gallery-item {
+            flex: 1 1 calc(33.333% - 2rem);
+            box-sizing: border-box;
+            margin: 1rem;
+            padding: 1rem;
+            border: 2px solid #00CED1;
+            border-radius: 8px;
+            background-color: #fff;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .gallery-item h3 {
+            font-size: 1.5rem;
+            color: #00CED1;
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-item iframe {
+            max-width: 100%;
+            height: 400px; /* Adjust the height as needed */
+            border: none;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #00CED1;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        #direccion {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- MAIN WRAPPER -->
+    <div id="wrapper">
+        <!-- BANNER WRAPPER -->
+        <header>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="pagina2.html">Hardware</a>
+                <a href="pagina3.html">Componentes</a>
+                <a href="juegos.html">Juegos Educativos</a>
+                <a href="pagina5.html">Formulario</a>
+            </nav>
+            <h1>Galería de Juegos Educativos</h1>
+        </header>
+
+        <main>
+            <section>
+                <p>Explora nuestra selección de juegos educativos en Educaplay. Haz clic en los enlaces para acceder a cada juego.</p>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="img/educalog.png" alt="Juego Educativo 1">
+                        <h3>ARQUITECTURA DE COMPUTADORAS</h3>
+                        <iframe allow="fullscreen; autoplay;" allowfullscreen src="https://es.educaplay.com/juego/4073172-arquitectura_de_computadoras.html"></iframe>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/educalog.png" alt="Juego Educativo 2">
+                        <h3>Computadoras y Arquitectura</h3>
+                        <iframe allow="fullscreen; autoplay;" allowfullscreen src="https://es.educaplay.com/juego/16047379-computadoras_y_arquitectura.html"></iframe>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/educalog.png" alt="Juego Educativo 3">
+                        <h3>Avances en la Arquitectura de Computadoras</h3>
+                        <iframe allow="fullscreen; autoplay;" allowfullscreen src="https://es.educaplay.com/juego/15851969-avances_en_la_arquitectura_de_computadoras.html"></iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p id="direccion">Atuntaqui, av General Enriques, <span>Ecuador-Imbabura | Tel: 098 7744 863</span></p>
+        </footer>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+        $(document).ready(function(){
+            $('.slider1').bxSlider({
+                mode: 'fade',
+            });
+            $('.slider2').bxSlider({
+                mode: 'fade',
+            });
+            $('.slider3').bxSlider({
+                mode: 'fade',
+            });
+        });
+    </script>
+</body>
+</html>

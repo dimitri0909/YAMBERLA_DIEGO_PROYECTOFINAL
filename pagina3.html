@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Periféricos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style1.css">
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background-color: #34495e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    #banner-wrapper {
+      background-color: #ecf0f1;
+      padding: 20px;
+    }
+
+    #slide-wrap {
+      text-align: center;
+    }
+
+    .slider {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .slider img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .icon-wrap {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .icon-wrap img {
+      max-width: 100px;
+      height: auto;
+    }
+
+    .one-third {
+      width: 30%;
+      margin: 1%;
+      float: left;
+      background: white;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    .one-third h3 {
+      color: #e74c3c;
+    }
+
+    .clearfix-padding::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    footer {
+      background-color: #34495e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    footer .second-footer {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .one-third {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MAIN WRAPPER -->
+  <div id="wrapper">
+
+    <!-- BANNER WRAPPER -->
+    <div id="banner-wrapper">
+      <header>
+        <nav>
+          <a href="index.html">Inicio</a>
+          <a href="pagina2.html">Hardware</a>
+          <a href="pagina3.html">Componentes</a>
+          <a href="juegos.html">Juegos Educativos</a>
+          <a href="pagina5.html">Formulario</a>
+        </nav>
+      </header>
+
+      <section id="article2" style="text-align: center;">
+        <h1><b>Periféricos de Entrada y Salida</b></h1>
+        <p>Los periféricos, en informática, son los aparatos o elementos que se conectan a la unidad central de procesamiento (CPU) de una computadora y facilitan la comunicación entre el ordenador y el medio externo.</p>
+      </section>
+
+      <!-- SLIDER -->
+      <div id="slide-wrap">
+        <section class="slider">
+          <ul class="slider1">
+            <li><img src="img/slider/slider1.jpg" alt="Periférico 1"></li>
+            <li><img src="img/slider/slider2.jpg" alt="Periférico 2"></li>
+            <li><img src="img/slider/slider3.jpg" alt="Periférico 3"></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <!-- ICONS -->
+    <section class="one-third" id="skills">
+      <div class="icon-wrap">
+        <img src="img/teclado.png" alt="Teclado">
+      </div>
+      <h3>Teclado</h3>
+      <p>Es un dispositivo compuesto por botones con letras, números, comandos y símbolos que permiten ingresar información a la computadora. Existe una gran variedad de teclados, siendo el más popular el de tipo QWERTY.</p>
+    </section>
+    <section class="one-third">
+      <div class="icon-wrap">
+        <img src="img/mouse.png" alt="Mouse">
+      </div>
+      <h3>Mouse o Ratón</h3>
+      <p>Es un dispositivo que se coloca sobre una superficie plana y permite mover un cursor en la pantalla para realizar tareas. Se complementa con el teclado y sus órdenes se dan al hacer clic en alguno de sus botones (derecho o izquierdo).</p>
+    </section>
+    <section class="one-third">
+      <div class="icon-wrap">
+        <img src="img/escaner.png" alt="Escáner">
+      </div>
+      <h3>Escáner</h3>
+      <p>Dispositivo que permite convertir una hoja física o fotografía en píxeles para la computadora. A menudo forma parte de las impresoras multifunción que, además de escanear, imprimen y hacen fotocopias.</p>
+    </section>
+
+    <div class="clearfix-padding"></div>
+    <!-- LEFT COL -->
+    <section class="one-third" id="portfolio">
+      <h3>Impresora</h3>
+      <p>Permite un registro en papel de las operaciones realizadas. Existen impresoras matriciales que son rápidas y económicas, ideales para imprimir gráficos con diversos tipos de letras.</p>
+    </section>
+
+    <section class="one-third">
+      <img src="img/impresora.jpg" alt="Impresora">
+    </section>
+
+    <div class="clearfix-padding"></div>
+    <!-- INFO THUMBNAILS -->
+    <div class="one-third" id="services">
+      <h3>Cámara Web</h3>
+      <img src="img/camara.png" alt="Cámara Web">
+      <p>Es un dispositivo que funciona como una pequeña cámara de fotos, permitiendo tomar fotografías, filmar y transmitir esos datos a la computadora. Las computadoras portátiles suelen incluir una cámara web.</p>
+    </div>
+    <div class="one-third">
+      <h3>Micrófono</h3>
+      <img src="img/microfono.png" alt="Micrófono">
+      <p>Permite ingresar audio desde el medio externo hacia la computadora. Las computadoras portátiles suelen incluir micrófono.</p>
+    </div>
+    <div class="one-third">
+      <h3>Joystick</h3>
+      <img src="img/j.png" alt="Joystick">
+      <p>Es una palanca con una base que puede realizar diversos movimientos. También conocido como palanca de mando, suele tener botones que permiten al usuario dar instrucciones o realizar acciones.</p>
+    </div>
+  </div>
+
+  <div class="clearfix-padding"></div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p id="direccion">Atuntaqui, av General Enriques, <span>Ecuador-Imbabura | Tel: 098 7744 863</span></p>
+    <div class="second-footer">
+      <p>© 2024 Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    $(document).ready(function(){
+      $('.slider1').bxSlider({
+        mode: 'fade',
+        auto: true,
+        pause: 4000,
+      });
+    });
+  </script>
+</body>
+</html>

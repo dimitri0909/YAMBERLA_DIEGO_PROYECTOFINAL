@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="Imagenes/sello.jpg">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<style>
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f5;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    #registro {
+        background: #ffffff;
+        padding: 20px;
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+        max-width: 400px;
+        width: 100%;
+        border-radius: 10px;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    h2 {
+        margin-top: 0;
+        background-color: #34495e;
+        color: #ecf0f1;
+        text-align: center;
+        padding: 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: lighter;
+        display: block;
+        margin-bottom: 5px;
+        color: #2c3e50;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #bdc3c7;
+        box-sizing: border-box;
+        transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    input:focus, select:focus, textarea:focus {
+        border-color: #2980b9;
+        box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);
+        outline: none;
+    }
+
+    button[type="submit"] {
+        background-color: #2980b9;
+        color: #ecf0f1;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #1c6ea4;
+    }
+
+    button, section {
+        margin-top: 10px;
+    }
+
+    .center {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+</style>
+<title>Inscripción Taller de Arquitectura de Computadoras</title>
+</head>
+<body>
+    <form id="registro">
+        <h2>Formulario de Inscripción para Taller de Arquitectura de Computadoras</h2>
+        
+        <div class="center">
+            <label for="nom">Nombre del estudiante:</label>
+        </div>
+        <input type="text" id="nom" required>
+        
+        <div class="center">
+            <label for="edad">Edad:</label>
+        </div>
+        <input type="number" id="edad" required>
+        
+        <div class="center">
+            <label for="correo">Correo:</label>
+        </div>
+        <input type="email" id="correo" required>
+        
+        <div class="center">
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        </div>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+        
+        <div class="center">
+            <label for="nivel_conocimiento">Nivel de Conocimiento en Computadoras:</label>
+        </div>
+        <select id="nivel_conocimiento">
+            <option value="Básico">Básico</option>
+            <option value="Intermedio">Intermedio</option>
+            <option value="Avanzado">Avanzado</option>
+        </select>
+        
+        <div class="center">
+            <label for="expectativas">Expectativas del Taller:</label>
+        </div>
+        <textarea id="expectativas" name="expectativas" rows="4" required></textarea>
+
+        <div class="center">
+            <button type="submit">Inscribir</button>
+        </div>
+
+        <div class="center">
+            <button type="button" onclick="window.location.href='index.html'">Regresar</button>
+        </div>
+    </form>
+
+    <script>
+    alert("¡Saludos! En la siguiente página podrás inscribirte al taller de arquitectura de computadoras.");
+    </script>
+
+    <script>
+    document.getElementById("registro").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evitar que el formulario se envíe
+
+        // Obtener valores del formulario
+        var nom = document.getElementById("nom").value;
+        var edad = document.getElementById("edad").value;
+        var correo = document.getElementById("correo").value;
+        var fechaNacimiento = document.getElementById("fecha_nacimiento").value; 
+        var nivelConocimiento = document.getElementById("nivel_conocimiento").value; 
+        var expectativas = document.getElementById("expectativas").value; 
+
+        // Mostrar el mensaje con la información del formulario
+        alert("¡Inscripción completada!\n\nNombre: " + nom + "\nEdad: " + edad + "\nCorreo: " + correo + "\nFecha de Nacimiento: " + fechaNacimiento + "\nNivel de Conocimiento: " + nivelConocimiento + "\nExpectativas del Taller: " + expectativas);
+    });
+    </script>
+</body>
+</html>
